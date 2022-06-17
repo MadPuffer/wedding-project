@@ -584,10 +584,23 @@ footer {
     position: absolute;
     bottom: 20px;
     right: 0;
-    padding: 80px 60px;
+    padding: 40px 60px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 770px) {
+    .contact-content {
+        width: 100%;
+    }
+    .form-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-section input, textarea {
+        width: 80% !important;
+    }
 }
 
 .contact-content .regular {
